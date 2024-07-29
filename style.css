@@ -57,6 +57,19 @@ header h1 {
     background-color: rgb(131, 114, 146);
 }
 
+.task-set {
+    width: max-content;
+    margin: 10px auto;
+}
+
+.set-btn {
+    padding: 10px;
+    margin: 5px;
+    font-size: 20px;
+    font-family: "Amiri", serif;
+    border-radius: 7px;
+}
+
 #outer {
     overflow: hidden;
     width: 95%;
