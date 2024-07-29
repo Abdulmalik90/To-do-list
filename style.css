@@ -4,7 +4,7 @@
     box-sizing: content-box;
 }
 body {
-    background-color: rgb(70, 69, 69);
+    background-color: rgb(255, 255, 255);
 }
 
 header {
@@ -13,6 +13,17 @@ header {
     height: 60px;
     text-align: center;
     border-bottom: black 2px solid;
+}
+
+#light-dark-btn {
+    border-radius: 20px;
+    margin-left: 10px;
+    background-color: rgb(70, 69, 69);
+}
+
+#light-dark-btn .material-symbols-outlined {
+    color: white;
+    padding: 3px;
 }
 
 #header-flex {
@@ -68,7 +79,7 @@ header h1 {
     scrollbar-width: none;
     scrollbar-color: rgb(141, 97, 180) white;
     margin-right: 15px;
-    border-top: rgb(255, 255, 255) 2px solid;
+    border-top: black 2px solid;
 
 }
 
