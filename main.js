@@ -4,6 +4,12 @@ let now = new Date();
 let date = now.toLocaleDateString();
 let time = now.toLocaleTimeString();
 
+//dark mode
+let darkLightIcon = document.getElementById("light-dark-btn")
+darkLightIcon.onclick = function(){
+    document.body.classList.toggle("dark-theme")
+}
+
 function taskDatefunOut() {
     let now = new Date();
     let date = now.toLocaleDateString();
