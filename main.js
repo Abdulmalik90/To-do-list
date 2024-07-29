@@ -8,17 +8,39 @@ let time = now.toLocaleTimeString();
 //dark mode
 let darkLightIcon = document.getElementById("light-dark-btn")
 let spanIcon = document.getElementById("spanDL")
+let choseBtn = document.getElementsByClassName("set-btn")
 darkLightIcon.onclick = function(){
     document.body.classList.toggle("dark-theme")
     if(document.body.classList.contains("dark-theme")){
         spanIcon.innerHTML = 'light_mode'
         darkLightIcon.style.backgroundColor = "white"
         spanIcon.style.color = "black"
-        
+
+        for (let i = 0; i < 3;i++){
+            choseBtn[i].style.backgroundColor = "gainsboro"
+            choseBtn[i].style.color = "black"
+            choseBtn[i].addEventListener("mouseout", function(){
+                choseBtn[i].style.backgroundColor = "gainsboro"
+            })
+            choseBtn[i].addEventListener("mouseover", function(){
+                choseBtn[i].style.backgroundColor = "rgb(46, 165, 76)"
+            })
+        }
     } else {
         spanIcon.innerHTML = 'dark_mode'
         darkLightIcon.style.backgroundColor = "rgb(70, 69, 69)"
         spanIcon.style.color = "white"
+
+        for (let i = 0; i < 3;i++){
+            choseBtn[i].style.backgroundColor = "white"
+            choseBtn[i].style.color = "black"
+            choseBtn[i].addEventListener("mouseout", function(){
+                choseBtn[i].style.backgroundColor = "white"
+            })
+            choseBtn[i].addEventListener("mouseover", function(){
+                choseBtn[i].style.backgroundColor = "rgb(46, 165, 76)"
+            })
+        }
     }
 }
 
@@ -218,6 +240,7 @@ function renderTasks() {
             }
             localStorage.setItem("Tasks", JSON.stringify(taskClass))
         })
+
 
     });
 }

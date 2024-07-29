@@ -63,11 +63,15 @@ header h1 {
 }
 
 .set-btn {
-    padding: 10px;
+    padding: 5px;
     margin: 5px;
-    font-size: 20px;
+    font-size: 15px;
     font-family: "Amiri", serif;
     border-radius: 7px;
+}
+
+.set-btn:hover {
+    background-color: rgb(46, 165, 76);
 }
 
 #outer {
