@@ -167,7 +167,7 @@ function renderTasks() {
             divInfo.style.backgroundColor = "gainsboro"
             divInfo.style.color = 'black'
             divInfo.addEventListener("mouseover", function(){
-                divInfo.style.backgroundColor = "rgb(110, 107, 107)"
+                divInfo.style.backgroundColor = "rgb(50, 28, 160)"
                 divInfo.style.color = "white"
             })
             divInfo.addEventListener("mouseout", function(){

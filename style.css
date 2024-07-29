@@ -3,7 +3,9 @@
     padding: 0;
     box-sizing: content-box;
 }
-
+body {
+    background-color: rgb(70, 69, 69);
+}
 
 header {
     background-color: rgb(73, 43, 226);
@@ -66,7 +68,7 @@ header h1 {
     scrollbar-width: none;
     scrollbar-color: rgb(141, 97, 180) white;
     margin-right: 15px;
-    border-top: black 2px solid;
+    border-top: rgb(255, 255, 255) 2px solid;
 
 }
 
@@ -102,7 +104,7 @@ header h1 {
 }
 
 .div-info:hover {
-    background-color: rgb(110, 107, 107);
+    background-color: rgb(146, 145, 145);
     color: white;
 }
 
