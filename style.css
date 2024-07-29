@@ -123,6 +123,11 @@ header h1 {
     flex-direction: row;
 }
 
+.blue {
+    background-color: #3498db; /* لون الخلفية الأزرق */
+    color: #ffffff; /* لون النص الأبيض */
+}
+
 
 
 #tasks-bar .task-div {

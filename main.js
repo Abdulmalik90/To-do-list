@@ -21,9 +21,11 @@ darkLightIcon.onclick = function(){
             choseBtn[i].style.color = "black"
             choseBtn[i].addEventListener("mouseout", function(){
                 choseBtn[i].style.backgroundColor = "gainsboro"
+                choseBtn[i].style.color = "black"
             })
             choseBtn[i].addEventListener("mouseover", function(){
                 choseBtn[i].style.backgroundColor = "rgb(46, 165, 76)"
+                choseBtn[i].style.color = "black"
             })
         }
     } else {
@@ -241,6 +243,47 @@ function renderTasks() {
             localStorage.setItem("Tasks", JSON.stringify(taskClass))
         })
 
+        // choices event listener
+
+        let all = document.getElementById("all")
+        let completed = document.getElementById("completed")
+        let uncompleted = document.getElementById("uncompleted")
+
+        all.addEventListener("click", function(){
+            if (task.isDone == true || task.isDone == false){
+                divInfo.style.display = "flex"
+            }
+
+            Array.from(choseBtn).forEach(chose => {
+                chose.classList.remove("blue")
+            })
+            this.classList.add("blue")
+        })
+        
+
+        completed.addEventListener("click", function(){
+            if (task.isDone == false){
+                divInfo.style.display = "none"
+            } else {
+                divInfo.style.display = "flex"
+            }
+            Array.from(choseBtn).forEach(chose => {
+                chose.classList.remove("blue")
+            })
+            this.classList.add("blue")
+        })
+
+        uncompleted.addEventListener("click", function(){
+            if (task.isDone == true){
+                divInfo.style.display = "none"
+            } else {
+                divInfo.style.display = "flex"
+            }
+            Array.from(choseBtn).forEach(chose => {
+                chose.classList.remove("blue")
+            })
+            this.classList.add("blue")
+        })
 
     });
 }
