@@ -224,6 +224,7 @@ function renderTasks() {
             
             task.isDone = true
             doneTrue()
+            divInfo.style.order = 1
             localStorage.setItem("Tasks", JSON.stringify(taskClass))
         })
 
@@ -231,6 +232,7 @@ function renderTasks() {
             
             task.isDone = false
             doneFalse()
+            divInfo.style.order = -1
             localStorage.setItem("Tasks", JSON.stringify(taskClass))
         })
 
